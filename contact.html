@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myprofile.css">
     <title>Contact</title>
 </head>
+
 <body>
     <header>
         <h1>Contact Me</h1>
@@ -18,28 +20,55 @@
         </nav>
     </header>
 
-    <section>
-        <h2>Get in Touch</h2>
-        <p>Feel free to contact me using the information below.</p>
+    <section class="contact-form-section">
+        <div class="contact-form-container">
+            <h2>Leave a Message Here</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
 
-        <address>
-            Email: rabinapanta222@gmail.com<br>
-            Phone: (444) 287-9834
-        </address>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/your_instagram" target="_blank"><img src="insta.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/your_facebook" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-            <a href="https://www.linkedin.com/in/your_linkedin" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="contact-info-section">
+        <div class="contact-info-container">
+            <h2>Get in Touch</h2>
+            <p>Feel free to contact me using the information below.</p>
+
+            <address>
+                Email: rabinapanta222@gmail.com<br>
+                Phone: (444) 287-9834
+            </address>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/your_instagram" target="_blank"><img src="insta.png"
+                        alt="Instagram"></a>
+                <a href="https://www.facebook.com/your_facebook" target="_blank"><img src="facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/your_linkedin" target="_blank"><img src="linkedin.png"
+                        alt="LinkedIn"></a>
+            </div>
         </div>
     </section>
 
+
     <footer>
-        <p>&copy;Rabina-Panta</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/your_instagram" target="_blank"><img src="insta.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/your_facebook" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-            <a href="https://www.linkedin.com/in/your_linkedin" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/your_instagram_username" target="_blank"><img src="insta.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/your_facebook_username" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
         </div>
+        <p>&copy; 2024 Rabina Panta</p>
     </footer>
 </body>
+
 </html>
