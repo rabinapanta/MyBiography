@@ -6,9 +6,9 @@ body {
 }
 
 header {
-    padding-top: 100px; /* Adjust this value to leave space for the navbar */
-    background-color: rgba(51, 51, 51, 0.8);
-    color: #fff;
+    padding-top: 100px;
+    background-color: rgba(191, 185, 185, 0.8);
+    color: #0b0a0a;
     text-align: center;
     padding: 1em;
 }
@@ -16,7 +16,7 @@ header {
 .center-image {
     max-width: 100%;
     height: auto;
-    border-radius: 10px; /* Add a slight border radius */
+    border-radius: 10px; 
 }
 
 .home-section img {
@@ -37,7 +37,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px; /* Adjust the height as needed */
+    height: 80px; 
     background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* Ensure the navbar appears above other content */
@@ -67,25 +67,35 @@ header {
 }
 
 .navbar a:hover {
-    color: #ffcc00;
-    /* Yellow color on hover */
+    color: #a1976d;
 }
 
 .navbar a.active {
-    color: #ffcc00;
-    /* Yellow color for the active page */
+    color: #a1976d;
 }
+.biography-container {
+    border: 2px solid #333; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    margin-top: 20px; /* Add margin to separate from the image */
+    padding: 20px; 
+}
+
+.biography {
+    text-align: center;
+}
+
+.skills-section {
+    text-align: center; /* Center the content */
+}
+
+.skills-table-container {
+    display: inline-block; /* Ensure the table takes only the necessary width */
+}
+
 .skills-table {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadowed border */
-}
-
-
-.skills-table table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%; /* Make the table fill the container horizontally */
+    max-width: 600px; 
+    margin: 0 auto; /* Center the table horizontally */
 }
 
 .skills-table th,
@@ -111,19 +121,17 @@ header {
 
 .grid-container {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
 .grid-item {
-    width: 48%;
-    /* Adjust the width as needed */
+    width:48%; 
+    margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
-    /* White background color */
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    /* Shadowed border */
-    margin-bottom: 20px;
 }
 
 .grid-item h2 {
@@ -217,9 +225,7 @@ section {
 
 .social-icons img {
     width: 40px;
-    /* Adjust the size as needed */
     height: 40px;
-    /* Adjust the size as needed */
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
 }
@@ -228,10 +234,23 @@ section {
     transform: scale(1.2);
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
 
 .footer-links {
-    text-align: center;
-    margin-bottom: 10px;
+    display: flex;
 }
 
 .footer-links a {
@@ -243,14 +262,6 @@ section {
     height: 30px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    width: 100%;
-    bottom: 0;
-}
 /* Media Queries for Tablet and Mobile */
 @media screen and (max-width: 768px) {
     /* Adjustments for Tablet */
@@ -259,7 +270,11 @@ footer {
     }
     
     .grid-item {
-        width: 100%;
+        width: calc(50% - 20px);
+    }
+    .footer-links img {
+        width: 25px;
+        height: 25px;
     }
 }
 
@@ -268,7 +283,14 @@ footer {
     .home-section img {
         width: 90%;
     }
-    /* Adjustments for Mobile */
+    .biography-container {
+        margin-top: 10px;
+        padding: 10px; 
+    }
+    .grid-item {
+        width: calc(100% - 20px); /* Adjust width for mobile screens */
+    }
+   
     .footer-links img {
         width: 20px;
         height: 20px;
