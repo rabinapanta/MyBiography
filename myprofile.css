@@ -34,7 +34,6 @@ header {
 .navbar {
     background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow */
 }
 
 .navbar ul {
@@ -240,4 +239,5 @@ footer {
     padding: 1em;
     width: 100%;
     bottom: 0;
+    position: fixed;
 }
