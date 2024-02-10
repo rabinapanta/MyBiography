@@ -242,3 +242,26 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* Media Queries for Tablet and Mobile */
+@media screen and (max-width: 768px) {
+    /* Adjustments for Tablet */
+    .home-section img {
+        width: 70%;
+    }
+    
+    .grid-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for Mobile */
+    .home-section img {
+        width: 90%;
+    }
+    /* Adjustments for Mobile */
+    .footer-links img {
+        width: 20px;
+        height: 20px;
+    }
+}
