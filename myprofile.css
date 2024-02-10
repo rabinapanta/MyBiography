@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    
+     
 }
 
 header {
@@ -244,6 +244,19 @@ footer {
     text-align: center;
     padding: 1em;
     width: 100%;
-    /* position: relative; */
     bottom: 0;
+}
+.home-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Spacing between the grids */
+}
+
+.biography {
+    grid-column: 1 / 2; /* Biography content spans first column */
+}
+
+.skills-section {
+    grid-column: 2 / 3; /* Skills table spans second column */
 }
