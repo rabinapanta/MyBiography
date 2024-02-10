@@ -12,10 +12,10 @@ header {
     padding: 1em;
 }
 
-.center-image {
+.my-image {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    border-radius: 10px; /* Add a slight border radius */
 }
 
 .home-section img {
@@ -72,11 +72,6 @@ header {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadowed border */
 }
 
-.center-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Add a slight border radius */
-}
 
 .skills-table table {
     width: 100%;
